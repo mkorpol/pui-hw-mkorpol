@@ -1,16 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8">
-  <title>Little buns bakery</title>
-  
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Little buns bakery</title>
+  </head>
   <body>
-    <img src="logo-01.svg" width="200" height="200">
-
-    <h1>I am the solution to HW1!</h1>
+    <img id="logo" src="logo-01.svg">
+    <hr>
 
     <p>
-        And I can link to <a href="./otherpage.html">other pages.</a>
+      <!--menu at top-->
+      <a href="index.html" class="menulink" id="home">Products</a>
+      <br>
+      <br>
+      <a href="cart.html" class="menulink">Cart</a>
     </p>
+    <!--start of products-->
+    <p>Our hand-made cinnamon rolls</p>
+
+    <!--individual divs with same class for each seperate product-->
+    <div class="products">
+      <a href="product.html"><img src="original-cinnamon-roll.jpeg" ></a>
+      <p>
+        <a href="product.html">Original Cinnamon Roll</a>
+      </p>
+      <p class="price">$2.49</p>
+    </div>
+
+    <div class="products">
+      <a href="product.html"><img src="apple-cinnamon-roll.jpeg" ></a>
+      <p>
+        <a href="product.html">Apple Cinnamon Roll</a>
+      </p>
+      <p class="price">$3.49</p>
+    </div>
+
+    <div class="products">
+      <a href="product.html"><img src="raisin-cinnamon-roll.jpeg" ></a>
+      <p>
+        <a href="product.html">Raisin Cinnamon Roll</a>
+      </p>
+      <p class="price">$2.99</p>
+    </div>
+
+    <div class="products">
+      <a href="product.html"><img src="walnut-cinnamon-roll.jpeg" ></a>
+      <p>
+        <a href="product.html">Walnut Cinnamon Roll</a>
+      </p>
+      <p class="price">$3.49</p>
+    </div>
+
+    <div class="products">
+      <a href="product.html"><img src="double-chocolate-cinnamon-roll.jpeg" ></a>
+      <p>
+        <a href="product.html">Double-chocolate Cinnamon Roll</a>
+      </p>
+      <p class="price">$3.99</p>
+    </div>
+
+    <div class="products">
+      <a href="product.html"><img src="strawberry-cinnamon-roll.jpeg" ></a>
+      <p>
+        <a href="product.html">Strawberry Cinnamon Roll</a>
+      </p>
+      <p class="price">$3.99</p>
+    </div>
 
   </body>
 </html>

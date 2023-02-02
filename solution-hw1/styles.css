@@ -1,4 +1,185 @@
-img {
-    width: 100px;
-    height: 100px;
+#logo {
+    width: 250px;
+    height: 250px;
+}
+
+/*line under logo*/
+hr {
+    width: 100%;
+    height: 5px;
+    border-width: 0;
+    background-color: black;
+}
+
+/*for all p tags (centering) */
+p {
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+
+}
+
+/*removing underline for product and cart*/
+.menulink {
+    text-decoration: none;
+}
+
+/*image styling for each product on gallery page*/
+.products img {
+    width: 200px;
+    height: 200px;
+    border: 5px solid rgb(0, 0, 0);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -25px;
+    margin-top: 30px;
+}
+
+/*centering links for gallery page*/
+.products a{
+    text-align: left;
+    font-size: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+}
+
+/*styling price of each product on gallery page*/
+.price {
+    padding-top: 0;
+    margin-right: 130px;
+    font-size: 20px;
+    text-align: left;
+}
+
+/*active link yellow*/
+a:active {
+    background-color: rgb(255, 255, 17);
+}
+
+/*yellow when hovering over links*/
+a:hover {
+    background-color: rgb(255, 255, 17);
+}
+
+/*keep visited links as black*/
+a:visited {
+    color: rgb(0, 0, 0);
+}
+
+/*keep unvisited links as black*/
+a:link {
+    color: rgb(0, 0, 0);
+}
+
+/*make entire product box yellow when hovering*/
+.products:hover {
+    background-color: rgb(255, 255, 17);
+}
+
+/*centering product boxes*/
+.products {
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*aligning text for products*/
+.products p {
+    text-align: left;
+    margin-bottom: -10px;
+}
+
+/*link stylings*/
+#home {
+    background-color:rgb(255, 255, 17);
+}
+
+#cart {
+    background-color:rgb(255, 255, 17);
+}
+
+/*styling, sizing, centering image on product detail page*/
+#productpage {
+    width: 450px;
+    height: 450px;
+    border: 5px solid rgb(0, 0, 0);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*centering textbox under image on product detail page */
+.textbox {
+    width: 210px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*styling text inside textbox to be aligned left*/
+.textbox p {
+    text-align: left;
+    font-size: 18px;
+}
+
+/*centering dropdown menus*/
+.dropdowns {
+    padding-left: 605px;
+    font-size: 20px;
+}
+
+/*styling add to cart button on product details page */
+#button {
+    background-color: yellow;
+    font-size: 18px;
+}
+
+/*styling and centering checkout button on cart page */
+#checkoutbutton {
+    background-color: yellow;
+    font-size: 18px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* styling, sizing, and centering images on cart page*/
+#cartpage{
+    width: 150px;
+    height: 150px;
+    border: 5px solid rgb(0, 0, 0);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*'remove' link on cart page centering*/
+.remove {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+}
+/*sizing line on cart page*/
+#carthr {
+    width: 50%;
+}
+
+/*fixing spacing and size in descriptions for items in cart */
+.cartdesc p{
+    font-size: 18px;
+    line-height: 5px;
+}
+
+/*spacing between item price and item description on cart page */
+#cartprice {
+    line-height: 25px;
+}
+
+/*spacing between description and price on gallery page*/
+.newprice {
+    line-height: 2px;
 }

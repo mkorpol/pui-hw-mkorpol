@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Little buns bakery</title>
+  </head>
+  <body>
+    <img id="logo" src="logo-01.svg">
+    <hr>
+
+    <!--menu at top-->
+    <p>
+      <a href="index.html" class="menulink">Products</a>
+      <br>
+      <br>
+      <a href="cart.html" class="menulink" id="cart">Cart</a>
+    </p>
+    <br>
+
+    <!--start of shopping cart-->
+    <p>Shopping Cart</p>
+
+    <!--first item in cart-->
+    <img id="cartpage" src="original-cinnamon-roll.jpeg">
+    <a class="remove" href="removelink">Remove</a>
+    <div class="cartdesc">
+      <p>Original Cinnamon Roll</p>
+      <p>Glazing: Keep original</p>
+      <p>Pack Size: 1</p>
+      <p id="cartprice">$ 2.49</p>
+    </div>
+
+    <!--line breaks to create space between items-->
+    <br>
+    <br>
+
+    <!--second item in cart-->
+    <img id="cartpage" src="double-chocolate-cinnamon-roll.jpeg">
+    <a class="remove" href="removelink">Remove</a>
+    <div class="cartdesc">
+      <p>Double Chocolate Cinnamon Roll</p>
+      <p>Glazing: Sugar milk</p>
+      <p>Pack Size: 6</p>
+      <p id="cartprice">$ 27.45</p>
+    </div>
+
+    <!--line between cart and total price-->
+    <hr id="carthr">
+
+    <p>Total: $ 29.94</p>
+    <!--checkout button-->
+    <input id="checkoutbutton" type="submit" value="Checkout">
+
+  </body>
+</html>
