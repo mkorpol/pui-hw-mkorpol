@@ -183,3 +183,11 @@ a:link {
 .newprice {
     line-height: 2px;
 }
+
+#logolink img:hover {
+    background-color: white;
+}
+
+#logolink:hover {
+    background-color: white;
+}
