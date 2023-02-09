@@ -19,7 +19,7 @@
 /*container for menu tabs (products and cart)*/
 .menucontainer {
     align-content: flex-start;
-    flex: 65%;
+    flex: 75%;
     text-align: right;
     font-size: 40px;
 }
@@ -33,7 +33,7 @@
 
 /*container for logo image*/
 .logocontainer {
-    flex: 35%;
+    flex: 25%;
 }
 
 /*container for image/info on product detail page */
@@ -58,6 +58,7 @@
     flex: 35%;
     align-content: space-evenly;
     justify-content: space-evenly;
+    margin-left: -220px;
 }
 
 /*container for items in cart (lower half of cart page [i.e. everything except top menu bar and logo])*/
@@ -215,7 +216,7 @@ a:link {
 .products p {
     text-align: left;
     font-size: 20px;
-    margin-left: 63px;
+    margin-left: 133px;
 }
 
 /*link stylings*/
@@ -280,7 +281,7 @@ a:link {
 
 /*'remove' link on cart page centering*/
 .remove {
-    margin-left: 35px;
+    margin-left: 85px;
 }
 /*sizing line on cart page*/
 #carthr {
@@ -314,5 +315,9 @@ a:link {
 
 /*fixing font size for info-container*/
 .infocontainer p{
-    font-size: 20px;
+    font-size: 30px;
+}
+
+form {
+    font-size: 18px;
 }
