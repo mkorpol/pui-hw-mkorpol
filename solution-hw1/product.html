@@ -6,53 +6,70 @@
     <title>Little buns bakery</title>
   </head>
   <body>
+    <div class="topcontainer">
     <!--logo-->
-    <a id="logolink" href="index.html"><img id="logo" src="logo-01.svg"></a>
-    <hr>
+      <div class="logocontainer">
+        <a id="logolink" href="index.html"><img id="logo" src="logo-01.svg"></a>
+      </div>
 
-    <!--menu at top-->
-    <p>
-      <a href="index.html" class="menulink" id="home">Products</a>
-      <br>
-      <br>
-      <a href="cart.html" class="menulink">Cart</a>
-    </p>
-    <br>
+      <div class="menucontainer">
+        <!--menu at top-->
+        <a href="index.html" class="menulink" id="home">Products</a>
+        <a href="cart.html" class="menulink">Cart</a>
+        <hr>
+        <p id="original">Original Cinnamon Roll</p>
+      </div>
+    </div>
     <!--product starts here-->
-    <p>Original Cinnamon Roll</p>
-    <img src="original-cinnamon-roll.jpeg" id="productpage">
-    <div class="textbox">
-        <p>Customize our delicious, hand-made cinnamon roll to your liking!</p>
-    </div>
+    <div class="productcontainer">
+        <div class="imagecontainer">
+            <img src="original-cinnamon-roll.jpeg" id="productpage">
+        </div>
 
-    <div class="dropdowns">
-        <!--first dropdown for glazing -->
-        <form action="/action_page.php">
-            <label for="glazing">Glazing:</label>
-            <br>
-            <select name="glaze" id="glaze">
-                <option value="original">Keep original</option>
-                <option value="sugar">Sugar milk</option>
-                <option value="vanilla">Vanilla milk</option>
-                <option value="choc">Double chocolate</option>
-            </select>
+        <div class="infocontainer">
+            <p id="textbox">Customize our delicious, hand-made cinnamon roll to your liking!</p>
+
             <br>
             <br>
-        </form>
-        <!--second dropdown for pack size -->
-        <form action="/action_page.php">
-            <label for="pack size">Pack Size:</label>
-            <br>
-            <select name="packsize" id="packsize">
-                <option value="one">1</option>
-                <option value="three">3</option>
-                <option value="six">6</option>
-                <option value="twelve">12</option>
-            </select>
             <br>
             <br>
-        </form>
-        $2.49
-        <!--add to cart button-->
-        <input id="button" type="submit" value="Add to cart">
+
+            <!--first dropdown for glazing -->
+            <form action="/action_page.php">
+                <label for="glazing">Glazing:</label>
+                <br>
+                <select name="glaze" id="glaze">
+                    <option value="original">Keep original</option>
+                    <option value="sugar">Sugar milk</option>
+                    <option value="vanilla">Vanilla milk</option>
+                    <option value="choc">Double chocolate</option>
+                </select>
+                <br>
+                <br>
+            </form>
+
+            <br>
+
+            <!--second dropdown for pack size -->
+            <form action="/action_page.php">
+                <label for="pack size">Pack Size:</label>
+                <br>
+                <select name="packsize" id="packsize">
+                    <option value="one">1</option>
+                    <option value="three">3</option>
+                    <option value="six">6</option>
+                    <option value="twelve">12</option>
+                </select>
+                <br>
+                <br>
+            </form>
+
+            <br>
+            <br>
+            <br>
+            $2.49
+            <!--add to cart button-->
+            <input id="button" type="submit" value="Add to cart">
+        </div>
     </div>
+  </body>

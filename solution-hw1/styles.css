@@ -1,6 +1,129 @@
+/*logo sizing */
 #logo {
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
+}
+
+/*container for top part of page (logo, products tab, cart tab, line, and title of page)*/
+.topcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+}
+
+/*container for menu tabs (products and cart)*/
+.menucontainer {
+    align-content: flex-start;
+    flex: 65%;
+    text-align: right;
+    font-size: 40px;
+}
+
+/*removing underline for product and cart*/
+.menulink {
+    text-decoration: none;
+    text-align: right;
+    margin-right: 70px;
+}
+
+/*container for logo image*/
+.logocontainer {
+    flex: 35%;
+}
+
+/*container for image/info on product detail page */
+.productcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    align-items: center;
+}
+
+/*container for image only on product detail page*/
+.imagecontainer {
+    flex: 65%;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+}
+
+/*container for info only on product detail page */
+.infocontainer {
+    flex: 35%;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+}
+
+/*container for items in cart (lower half of cart page [i.e. everything except top menu bar and logo])*/
+.cartcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+}
+
+/*empty container used to push cart items to left of page w/ flexbox */
+.emptycontainer {
+    flex: 35%;
+}
+
+/*overall container for cart*/
+.itemscontainer {
+    flex: 65%;
+}
+
+/*container for one item in cart*/
+.firstcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+}
+
+/*container for cart product image and remove button */
+.firstimagecont {
+    flex:35%;
+    align-content: flex-start;
+}
+
+/*container for product information*/
+.descontainer {
+    flex:40%;
+}
+
+/*container for price of product*/
+.pricecontainer {
+    flex:25%;
+}
+
+/*overall container for checkout stuff at bottom of cart page*/
+.bottomcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+}
+
+/*container for 'Total' on left side of checkout area on cart page */
+.bottomleftcont {
+    flex: 50%;
+    margin-bottom: 75px;
+}
+
+/*container for total price and checkout button on cart page */
+.bottomrightcont {
+    flex: 50%;
+    margin-bottom: 50px;
 }
 
 /*line under logo*/
@@ -19,9 +142,15 @@ p {
 
 }
 
-/*removing underline for product and cart*/
-.menulink {
-    text-decoration: none;
+/*aligning title of gallery page to left*/
+#handmade {
+    text-align: left;
+}
+
+/*aligning product title on product page to left*/
+#original {
+    text-align: left;
+    margin-top: 70px;
 }
 
 /*image styling for each product on gallery page*/
@@ -32,24 +161,12 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: -25px;
-    margin-top: 30px;
-}
-
-/*centering links for gallery page*/
-.products a{
-    text-align: left;
-    font-size: 20px;
-    padding-bottom: 0px;
-    margin-bottom: 0;
 }
 
 /*styling price of each product on gallery page*/
 .price {
     padding-top: 0;
-    margin-right: 130px;
     font-size: 20px;
-    text-align: left;
 }
 
 /*active link yellow*/
@@ -78,16 +195,25 @@ a:link {
 }
 
 /*centering product boxes*/
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    row-gap: 20px;
+}
+
+/*setting widths of each item in container for gallery page (so only 3 products per row)*/
 .products {
-    width: 220px;
-    margin-left: auto;
-    margin-right: auto;
+    flex: 33.33%;
 }
 
 /*aligning text for products*/
 .products p {
     text-align: left;
-    margin-bottom: -10px;
+    font-size: 20px;
+    margin-left: 63px;
 }
 
 /*link stylings*/
@@ -110,18 +236,13 @@ a:link {
 }
 
 /*centering textbox under image on product detail page */
-.textbox {
+#textbox {
     width: 210px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/*styling text inside textbox to be aligned left*/
-.textbox p {
     text-align: left;
     font-size: 18px;
 }
+
+/*styling text inside textbox to be aligned left*/
 
 /*centering dropdown menus*/
 .dropdowns {
@@ -157,11 +278,7 @@ a:link {
 
 /*'remove' link on cart page centering*/
 .remove {
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50px;
+    margin-left: 35px;
 }
 /*sizing line on cart page*/
 #carthr {
@@ -169,9 +286,10 @@ a:link {
 }
 
 /*fixing spacing and size in descriptions for items in cart */
-.cartdesc p{
+.descontainer p{
     font-size: 18px;
     line-height: 5px;
+    text-align: left;
 }
 
 /*spacing between item price and item description on cart page */
@@ -180,8 +298,8 @@ a:link {
 }
 
 /*spacing between description and price on gallery page*/
-.newprice {
-    line-height: 2px;
+.price {
+    line-height: 1px;
 }
 
 #logolink img:hover {
@@ -190,4 +308,9 @@ a:link {
 
 #logolink:hover {
     background-color: white;
+}
+
+/*fixing font size for info-container*/
+.infocontainer p{
+    font-size: 20px;
 }
