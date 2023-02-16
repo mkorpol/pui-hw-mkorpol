@@ -39,11 +39,8 @@
             <form action="/action_page.php">
                 <label for="glazing">Glazing:</label>
                 <br>
-                <select name="glaze" id="glaze">
-                    <option value="original">Keep original</option>
-                    <option value="sugar">Sugar milk</option>
-                    <option value="vanilla">Vanilla milk</option>
-                    <option value="choc">Double chocolate</option>
+                <select id="glazingOptions" onchange = "glazingChange(this)">
+
                 </select>
                 <br>
                 <br>
@@ -55,11 +52,8 @@
             <form action="/action_page.php">
                 <label for="pack size">Pack Size:</label>
                 <br>
-                <select name="packsize" id="packsize">
-                    <option value="one">1</option>
-                    <option value="three">3</option>
-                    <option value="six">6</option>
-                    <option value="twelve">12</option>
+                <select id="packOptions" onchange = "packChange(this)">
+
                 </select>
                 <br>
                 <br>
@@ -68,7 +62,7 @@
             <br>
             <br>
             <br>
-            $2.49
+            <p id="productdetailprice">$2.49</p>
             <!--add to cart button-->
             <input id="button" type="submit" value="Add to cart">
         </div>
