@@ -72,6 +72,13 @@ const rolls = {
         "imageFile": "strawberry-cinnamon-roll.jpeg"
     }    
 };
+/* even though I have this rollsData.js linked in all my HTML files along with app.js, 
+I cannot access this array from rollsData.js in app.js (it is not treating the array as global).
+I have tried to move my script tags in the HTML files to the very bottom of the body,
+but this does not work either. I have redefined the array in my app.js directly above
+as a result of this, which is then giving me an error in the console
+saying 'rolls is already defined in rollsData.js. However, there is no other way
+for me to access the rolls array without defining it in here. */
 
 // getting chosen roll type
 const queryString = window.location.search;
@@ -84,7 +91,7 @@ headerElement.innerText = rollType + ' Cinnamon Roll ';
 
 // updating image on product page
 const rollImage = document.querySelector('#productpage');
-rollImage.src = './' + rolls[rollType]["imageFile"];
+rollImage.src = './images/' + rolls[rollType]["imageFile"];
 
 let productPrice = document.getElementById('productdetailprice');
 // getting base price for chosen roll type 
@@ -100,17 +107,17 @@ function glazingChange(element) {
     const priceChange = parseFloat(element.value);
     glazingPrice = priceChange;
     rollGlazing = element.options[element.selectedIndex].text;
-    productPrice.innerText = (basePrice + priceChange) * packPrice;
+    let totalPrice = (basePrice + priceChange) * packPrice;
+    productPrice.innerText = totalPrice.toFixed(2);
 }
 
 function packChange(element) {
     const priceChange2 = parseFloat(element.value);
     packPrice = priceChange2;
     packSize = element.options[element.selectedIndex].text;
-    productPrice.innerText = (basePrice + glazingPrice) * packPrice;
+    let totalPrice = (basePrice + glazingPrice) * packPrice;
+    productPrice.innerText = totalPrice.toFixed(2);
 }
-
-productPrice.innerText = (basePrice + glazingPrice) * packPrice;
 
 // shopping cart updating
 class Roll {
