@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--test-->
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Little buns bakery</title>
+  </head>
+  <body>
+    <div class="topcontainer">
+    <!--logo-->
+      <div class="logocontainer">
+        <a id="logolink" href="index.html"><img id="logo" src="logo-01.svg"></a>
+      </div>
+
+      <div class="menucontainer">
+        <!--menu at top-->
+        <a href="index.html" class="menulink">Products</a>
+        <a href="cart.html" class="menulink" id="cart">Cart</a>
+        <hr>
+        <p id="original">Shopping cart</p>
+      </div>
+    </div>
+
+    <div class="cartcontainer">
+
+      <div class="emptycontainer">
+        <p></p>
+      </div>
+
+      <div class="itemscontainer">
+        <!--first item in cart-->
+        <div class="firstcontainer">
+          <div class="firstimagecont">
+            <img id="cartpage" src="original-cinnamon-roll.jpeg">
+            <a class="remove" href="removelink">Remove</a>
+          </div>
+          <div class="descontainer">
+            <p>Original Cinnamon Roll</p>
+            <p>Glazing: Keep original</p>
+            <p>Pack Size: 1</p>
+          </div>
+          <div class="pricecontainer">
+            <p id="cartprice">$ 2.49</p>
+          </div>
+        </div>
+
+        <!--line breaks to create space between items-->
+        <br>
+        <br>
+
+        <!--second item in cart-->
+        <div class="firstcontainer">
+          <div class="firstimagecont">
+            <img id="cartpage" src="double-chocolate-cinnamon-roll.jpeg">
+            <a class="remove" href="removelink">Remove</a>
+          </div>
+          <div class="descontainer">
+            <p>Double Chocolate Cinnamon Roll</p>
+            <p>Glazing: Sugar milk</p>
+            <p>Pack Size: 6</p>
+          </div>
+          <div class="pricecontainer">
+            <p id="cartprice">$ 27.45</p>
+          </div>
+        </div>
+
+        <!--line between cart and total price-->
+        <hr>
+
+        <div class="bottomcontainer">
+          <div class="bottomleftcont">
+            <p>Total:</p>
+          </div>
+          <div class="bottomrightcont">
+            <p>$ 29.94</p>
+            <!--checkout button-->
+            <input id="checkoutbutton" type="submit" value="Checkout">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
