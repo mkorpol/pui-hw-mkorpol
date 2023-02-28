@@ -46,32 +46,7 @@ for(index in packSizeOptions) {
     select2.options[select2.options.length] = new Option(packSizeOptions[index].size, packSizeOptions[index].price);
 }
 
-const rolls = {
-    "Original": {
-        "basePrice": 2.49,
-        "imageFile": "original-cinnamon-roll.jpeg"
-    },
-    "Apple": {
-        "basePrice": 3.49,
-        "imageFile": "apple-cinnamon-roll.jpeg"
-    },
-    "Raisin": {
-        "basePrice": 2.99,
-        "imageFile": "raisin-cinnamon-roll.jpeg"
-    },
-    "Walnut": {
-        "basePrice": 3.49,
-        "imageFile": "walnut-cinnamon-roll.jpeg"
-    },
-    "Double-Chocolate": {
-        "basePrice": 3.99,
-        "imageFile": "double-chocolate-cinnamon-roll.jpeg"
-    },
-    "Strawberry": {
-        "basePrice": 3.99,
-        "imageFile": "strawberry-cinnamon-roll.jpeg"
-    }    
-};
+
 /* even though I have this rollsData.js linked in all my HTML files along with app.js, 
 I cannot access this array from rollsData.js in app.js (it is not treating the array as global).
 I have tried to move my script tags in the HTML files to the very bottom of the body,
