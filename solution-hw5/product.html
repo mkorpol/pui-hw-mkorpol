@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--test-->
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <title>Little buns bakery</title>
+    <script defer src="js/rollsData.js"></script>
+    <script defer src="js/app.js"></script>
+  </head>
+  <body>
+    <div class="topcontainer">
+    <!--logo-->
+      <div class="logocontainer">
+        <a id="logolink" href="index.html"><img id="logo" src="images/logo-01.svg"></a>
+      </div>
+
+      <div class="menucontainer">
+        <!--menu at top-->
+        <a href="index.html" class="menulink" id="home">Products</a>
+        <a href="cart.html" class="menulink">Cart</a>
+        <hr>
+        <p id="original">Original Cinnamon Roll</p>
+      </div>
+    </div>
+    <!--product starts here-->
+    <div class="productcontainer">
+        <div class="imagecontainer">
+            <img src="images/original-cinnamon-roll.jpeg" id="productpage">
+        </div>
+
+        <div class="infocontainer">
+            <p id="textbox">Customize our delicious, hand-made cinnamon roll to your liking!</p>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <!--first dropdown for glazing -->
+            <form action="/action_page.php">
+                <label for="glazing">Glazing:</label>
+                <br>
+                <select id="glazingOptions" onchange = "glazingChange(this)">
+
+                </select>
+                <br>
+                <br>
+            </form>
+
+            <br>
+
+            <!--second dropdown for pack size -->
+            <form action="/action_page.php">
+                <label for="pack size">Pack Size:</label>
+                <br>
+                <select id="packSizeOptions" onchange = "packChange(this)">
+
+                </select>
+                <br>
+                <br>
+            </form>
+
+            <br>
+            <br>
+            <br>
+            <div id="productdetailprice"></div>
+            <!--add to cart button-->
+            <button onclick="addToCart()" id="button" type="submit">Add to cart</button>
+        </div>
+    </div>
+  </body>

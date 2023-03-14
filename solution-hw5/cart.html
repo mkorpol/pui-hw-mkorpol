@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--test-->
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/rollsData.js"></script>
+    <script defer src="js/cart.js"></script>
+    <meta charset="UTF-8">
+    <title>Little buns bakery</title>
+  </head>
+  <body>
+    <div class="topcontainer">
+    <!--logo-->
+      <div class="logocontainer">
+        <a id="logolink" href="index.html"><img id="logo" src="images/logo-01.svg"></a>
+      </div>
+
+      <div class="menucontainer">
+        <!--menu at top-->
+        <a href="index.html" class="menulink">Products</a>
+        <a href="cart.html" class="menulink" id="cart">Cart</a>
+        <hr>
+        <p id="original">Shopping cart</p>
+      </div>
+    </div>
+
+    <div class="cartcontainer">
+
+      <div class="emptycontainer">
+        <p></p>
+      </div>
+
+      <div class="overallcart">
+        <!--first item in cart-->
+        <div class="cartcomplete">
+          <template id="carttemplate">
+            <div class="firstcontainer">
+
+              <div class="firstimagecont">
+                <img id="cartpage" src="">
+                <a class="remove">Remove</a>
+              </div>
+
+              <div class="descontainer">
+                <p id="rollname"></p>
+                <p id="glazingtype"></p>
+                <p id="packsize"></p>
+              </div>
+
+              <div class="pricecontainer">
+                <p id="cartprice"></p>
+              </div>
+              
+            </div>
+          </template>
+        </div>
+
+        <!--line breaks to create space between items-->
+        <br>
+        <br>
+
+        <!--line between cart and total price-->
+        <hr>
+
+        <div class="bottomcontainer">
+          <div class="bottomleftcont">
+            <p>Total:</p>
+          </div>
+          <div class="bottomrightcont">
+            <p id="totalprice"></p>
+            <!--checkout button-->
+            <input id="checkoutbutton" type="submit" value="Checkout">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
