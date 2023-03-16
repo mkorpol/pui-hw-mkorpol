@@ -121,7 +121,6 @@ if (cart == null) {
     cart = []; //setting cart variable to empty array 
     localStorage.setItem("cart", JSON.stringify(cart)); //now storing it in local storage
 }
-console.log(cart);
 
 //on 'add to cart' button click, save product info to instance of Roll class
 function addToCart() {

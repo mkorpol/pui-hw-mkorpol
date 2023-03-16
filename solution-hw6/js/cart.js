@@ -7,6 +7,7 @@ var cart = JSON.parse(localStorage.getItem("cart"));
 if (cart == null) {
     cart = []; //setting cart variable to empty array 
     localStorage.setItem("cart", JSON.stringify(cart)); //now storing it in local storage
+    console.log(cart);
 }
 console.log(cart);
 
@@ -71,8 +72,7 @@ function displayToCart(roll) {
 
     /* updating total price */
     totalPrice += parseFloat(roll.actualPrice);
-    console.log(totalPrice);
-    document.getElementById('totalprice').innerText = "$" + totalPrice;
+    document.getElementById('totalprice').innerText = "$" + ((totalPrice).toFixed(2));
 
     /* to remove a roll */
     const remove = document.querySelector('.remove');
@@ -84,6 +84,7 @@ function displayToCart(roll) {
         roll.element.remove();
         cart = arrayRemove(cart,roll);
         localStorage.setItem("cart", JSON.stringify(cart));
+        console.log(cart);
     })
 }
 
