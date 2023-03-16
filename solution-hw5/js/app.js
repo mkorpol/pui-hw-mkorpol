@@ -96,11 +96,19 @@ class Roll {
     }
 }
 
-const cart = [];
+// get the cart from local storage
+var cart = JSON.parse(localStorage.getItem("cart"));
+//  if cart doesn't exist in local storage, create it here
+if (cart == null) {
+    cart = []; //setting cart variable to empty array 
+    localStorage.setItem("cart", JSON.stringify(cart)); //now storing it in local storage
+}
+console.log(cart);
 
 //on 'add to cart' button click, save product info to instance of Roll class
 function addToCart() {
     var rollOne = new Roll(rollType, rollGlazing, packSize, basePrice);
     cart.push(rollOne);
+    localStorage.setItem("cart", JSON.stringify(cart));
     console.log(cart);
 }

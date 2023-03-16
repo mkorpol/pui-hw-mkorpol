@@ -1,5 +1,8 @@
 /* creating empty cart */
-const cart = [];
+let cart = [];
+
+const currentCart = localStorage.getItem(cart);
+console.log(currentCart);
 
 /* add to cart function from hw 4 */
 //on 'add to cart' button click, save product info to instance of Roll class

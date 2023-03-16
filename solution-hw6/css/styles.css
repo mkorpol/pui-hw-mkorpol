@@ -1,0 +1,328 @@
+/*test*/
+
+/*logo sizing */
+#logo {
+    width: 350px;
+    height: 350px;
+}
+
+/*container for top part of page (logo, products tab, cart tab, line, and title of page)*/
+.topcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+}
+
+/*container for menu tabs (products and cart)*/
+.menucontainer {
+    align-content: flex-start;
+    flex: 75%;
+    text-align: right;
+    font-size: 40px;
+}
+
+/*removing underline for product and cart*/
+.menulink {
+    text-decoration: none;
+    text-align: right;
+    margin-right: 70px;
+}
+
+/*container for logo image*/
+.logocontainer {
+    flex: 25%;
+}
+
+/*container for image/info on product detail page */
+.productcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    align-items: center;
+}
+
+/*container for image only on product detail page*/
+.imagecontainer {
+    flex: 65%;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+}
+
+/*container for info only on product detail page */
+.infocontainer {
+    flex: 35%;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    margin-left: -220px;
+}
+
+/*container for items in cart (lower half of cart page [i.e. everything except top menu bar and logo])*/
+.cartcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+}
+
+/*empty container used to push cart items to left of page w/ flexbox */
+.emptycontainer {
+    flex: 35%;
+}
+
+/*overall container for cart*/
+.overallcart {
+    flex: 65%;
+}
+
+/*container for one item in cart*/
+.firstcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+}
+
+/*container for cart product image and remove button */
+.firstimagecont {
+    flex:35%;
+    align-content: flex-start;
+}
+
+/*container for product information*/
+.descontainer {
+    flex:40%;
+}
+
+/*container for price of product*/
+.pricecontainer {
+    flex:25%;
+}
+
+/*overall container for checkout stuff at bottom of cart page*/
+.bottomcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+}
+
+/*container for 'Total' on left side of checkout area on cart page */
+.bottomleftcont {
+    flex: 50%;
+    margin-bottom: 75px;
+}
+
+/*container for total price and checkout button on cart page */
+.bottomrightcont {
+    flex: 50%;
+    margin-bottom: 50px;
+}
+
+/*line under logo*/
+hr {
+    width: 100%;
+    height: 5px;
+    border-width: 0;
+    background-color: black;
+}
+
+/*for all p tags (centering) */
+p {
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+
+}
+
+/*aligning title of gallery page to left*/
+#handmade {
+    text-align: left;
+}
+
+/*aligning product title on product page to left*/
+#original {
+    text-align: left;
+    margin-top: 70px;
+}
+
+/*image styling for each product on gallery page*/
+.products img {
+    width: 200px;
+    height: 200px;
+    border: 5px solid rgb(0, 0, 0);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*styling price of each product on gallery page*/
+.price {
+    padding-top: 0;
+    font-size: 20px;
+}
+
+/*active link yellow*/
+a:active {
+    background-color: rgb(255, 255, 17);
+}
+
+/*yellow when hovering over links*/
+a:hover {
+    background-color: rgb(255, 255, 17);
+}
+
+/*keep visited links as black*/
+a:visited {
+    color: rgb(0, 0, 0);
+}
+
+/*keep unvisited links as black*/
+a:link {
+    color: rgb(0, 0, 0);
+}
+
+/*make entire product box yellow when hovering*/
+.products:hover {
+    background-color: rgb(255, 255, 17);
+}
+
+/*centering product boxes*/
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    row-gap: 20px;
+}
+
+/*setting widths of each item in container for gallery page (so only 3 products per row)*/
+.products {
+    flex: 33.33%;
+}
+
+/*aligning text for products*/
+.products p {
+    text-align: left;
+    font-size: 20px;
+    margin-left: 133px;
+}
+
+/*link stylings*/
+#home {
+    background-color:rgb(255, 255, 17);
+}
+
+#cart {
+    background-color:rgb(255, 255, 17);
+}
+
+/*styling, sizing, centering image on product detail page*/
+#productpage {
+    width: 450px;
+    height: 450px;
+    border: 5px solid rgb(0, 0, 0);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*centering textbox under image on product detail page */
+#textbox {
+    width: 210px;
+    text-align: left;
+    font-size: 18px;
+}
+
+/*styling text inside textbox to be aligned left*/
+
+/*centering dropdown menus*/
+.dropdowns {
+    padding-left: 605px;
+    font-size: 20px;
+}
+
+/*styling add to cart button on product details page */
+#button {
+    background-color: yellow;
+    font-size: 18px;
+    display: inline-block;
+}
+
+/*styling and centering checkout button on cart page */
+#checkoutbutton {
+    background-color: yellow;
+    font-size: 18px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* styling, sizing, and centering images on cart page*/
+#cartpage{
+    width: 150px;
+    height: 150px;
+    border: 5px solid rgb(0, 0, 0);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*'remove' link on cart page centering*/
+.remove {
+    margin-left: 85px;
+}
+/*sizing line on cart page*/
+#carthr {
+    width: 50%;
+}
+
+/*fixing spacing and size in descriptions for items in cart */
+.descontainer p{
+    font-size: 18px;
+    line-height: 5px;
+    text-align: left;
+}
+
+/*spacing between item price and item description on cart page */
+#cartprice {
+    line-height: 25px;
+}
+
+/*spacing between description and price on gallery page*/
+.price {
+    line-height: 1px;
+}
+
+#logolink img:hover {
+    background-color: white;
+}
+
+#logolink:hover {
+    background-color: white;
+}
+
+/*fixing font size for info-container*/
+.infocontainer p{
+    font-size: 30px;
+}
+
+form {
+    font-size: 18px;
+}
+
+#productdetailprice {
+    display: inline-block;
+}
