@@ -28,22 +28,24 @@ a {
 }
 
 
-.btn {
+button {
   color: #ffffff;
   text-decoration: none;
   font-size: 1rem;
   font-family: 'Tinos', serif;
-}
-
-
-.btn {
   margin-bottom: 7px;
   background-color: #9c6be2;
   border: none;
   margin-right: 5px;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-.btn:hover {
+button:hover {
   background-color: #6a10e8;
 }
 
@@ -258,7 +260,7 @@ h1 {
 
 .contact-form button[type="submit"] {
   font-family: 'Tinos', serif;
-  background-color: #e67a1b;
+  background-color: #ff8214;
   color: white;
   padding: 10px;
   border: none;
@@ -268,15 +270,16 @@ h1 {
 }
 
 .contact-form button[type="submit"]:hover {
-  background-color: #e67a1b;
+  background-color: #eb7208;
   color: black;
 }
 
 
 /* FOOTER STYLING */
 footer {
-  text-align: center;
-  background-color: #fbccff;
+  text-align: left;
+  color: white;
+  background-color: #f2b1f8;
   padding: 25px 0 20px;
 }
 
