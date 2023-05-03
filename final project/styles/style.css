@@ -1,0 +1,444 @@
+html {
+    font-family: 'Tinos', serif;
+    scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 0.3em;
+}
+
+html {
+  font-size: 125%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  color: #252525;
+  font-family: 'Tinos', serif;
+  overflow-x: hidden;
+}
+
+#resume {
+    margin-left: 400px;
+    width: 30%;
+}
+
+#headshot img{
+  display: block;
+  width: 50%;
+  min-width: 50%;
+}
+
+/* adds padding to the top of each section */
+section {
+  margin: 0;
+  padding: 50px 0;
+}
+
+/* adds spacing to content in each container */
+.wrapper {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 8%;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  color: #252525;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: 'Tinos', serif;
+}
+
+
+.btn {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: 'Tinos', serif;
+}
+
+
+.btn {
+  margin-bottom: 7px;
+  background-color: #9c6be2;
+  border: none;
+  margin-right: 5px;
+}
+
+.btn:hover {
+  background-color: #6a10e8;
+}
+
+h3, h4 {
+    font-family: 'Tinos', serif;
+    font-size: 2.1rem;
+}
+
+#course {
+    padding-bottom: 30px;
+    color: #2BA386;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+#my {
+    color: #038E01;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+#stuff {
+    color: #6C52FF;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+#who {
+    color: #4586FF;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+#formm {
+    color: #FF9A3D;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+.actualcourse {
+    font-size: 1.4em;
+}
+
+h4 {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  color: #865bea;
+}
+
+#abouttitle {
+  color: #0f2993;
+}
+
+#pic {
+    width: 40px;
+    height: 40px;
+}
+
+nav {
+    opacity: 100%;
+}
+
+/* setting color and underline transition of nav bar links */
+nav ul {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #FFABAB;
+    padding-right: 3%;
+    text-align: center;
+    display: -webkit-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: 0.5s;
+  }
+  
+  nav ul li:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 14%;
+    width: 72%;
+    height: 4px;
+    background-color: #f48480;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+
+/* used for underline on hover */
+
+nav ul li:hover:after {
+    transform: scaleX(1);
+}
+
+nav ul li {
+    transform: translateY(0);
+}
+
+nav ul a {
+  color: #fff;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.3rem;
+  display: inline-block;
+  padding: 15px 26px 10px;
+}
+
+.courses {
+    background-color: #B2FFED;
+}
+
+.skills {
+    background-color: #DCFFCB;
+}
+
+.projects {
+    background-color: #E4E0FF;
+}
+
+.about {
+    background-color: #C7DAFF;
+}
+
+.contact {
+    background-color: #fce5d9
+}
+
+header {
+  background-color: #e8c9ff;
+  margin: 0;
+  padding: 100px 0 50px;
+}
+
+/* SHAKE ON RESUME */
+#resume:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-10deg); }
+    20% { transform: translate(-3px, 0px) rotate(10deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+  }
+
+header {
+    padding-top: 150px;
+    padding-bottom: 200px;
+}
+
+#hello {
+    font-family: 'Courier Prime', monospace;
+    font-size: 1.7em;
+}
+
+h1 {
+  font-family: 'Courier Prime', monospace;
+  font-size: 8px;
+  color: #fff;
+  padding-top: 120px;
+  font-size: 2rem;
+  max-width: 890px;
+  display: block;
+  margin: 0;
+}
+
+/* FORM STYLING */
+.form-row {
+    margin-right: 500px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  justify-content: left;
+}
+
+.contact-form label {
+  font-family: 'Tinos', serif;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.contact-form button[type="submit"] {
+  font-family: 'Tinos', serif;
+  background-color: #e67a1b;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #e67a1b;
+  color: black;
+}
+
+
+/* FOOTER STYLING */
+footer {
+  text-align: center;
+  background-color: #fbccff;
+  padding: 25px 0 20px;
+}
+
+footer p {
+  margin: 0;
+  font-size: .76rem;
+}
+
+@media (min-width: 300px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 10px;
+    }
+    .grid-item {
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .grid-item p {
+        color:#038E01;
+    }
+}
+
+@media (min-width: 500px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+    }
+    .grid-item {
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .grid-item p {
+        color:#038E01;
+    }
+}
+
+/* SKILL SECTION ICONS */
+@media (min-width: 800px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        padding: 10px;
+    }
+    .grid-item {
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .grid-item p {
+        color:#038E01;
+    }
+}
+
+/* PROJECT SECTION */
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media screen and (min-width: 1px) {
+    .project-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .project-image {
+        flex: 100%;
+    }
+    
+    .project-desc {
+        flex: 100%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .project-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .project-image {
+        flex: 50%;
+        float: left;
+    }
+    
+    .project-desc1 {
+        flex: 50%;
+        float: right;
+        padding-top: 50px;
+    }
+
+    .project-desc2 {
+        flex: 50%;
+        float: right;
+        padding-top: 80px;
+    }
+}
+
+@media screen and (min-width: 1px) {
+    .coursework-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .coursework-image {
+        flex: 100%;
+        align-items: center;
+        justify-content: center;
+        float: left;
+    }
+
+    .coursework-text {
+        flex: 100%;
+    }
+}
+
+/* COURSEWORK SECTION */
+@media screen and (min-width: 800px) {
+    .coursework-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .coursework-image {
+        flex: 50%;
+    }
+
+    .coursework-text {
+        flex: 50%;
+    }
+}
+
+/* ABOUT SECTION */
+@media (min-width: 800px) {
+    .about-row {
+        display: flex;
+    }
+
+    .about-image {
+        width: 50%;
+    }
+
+    .about-text {
+        width: 50%;
+    }
+}
+
