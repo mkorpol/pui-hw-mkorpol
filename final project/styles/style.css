@@ -14,19 +14,10 @@ html {
   min-width: 50%;
 }
 
-/* adds padding to the top of each section */
-section {
-  padding: 50px 0;
-}
-
 /* adds spacing to content in each container */
 .wrapper {
   margin: 0 auto;
   padding: 0 8%;
-}
-
-ul,li {
-  list-style-type: none;
 }
 
 a {
@@ -62,7 +53,6 @@ h3, h4 {
 }
 
 #course {
-    padding-bottom: 30px;
     color: #2BA386;
     font-family: 'Hammersmith One', sans-serif;
 }
@@ -127,6 +117,7 @@ nav ul {
     align-items: center;
     justify-content: flex-end;
     transition: 0.5s;
+    list-style-type: none;
   }
   
   nav ul li:after {
@@ -140,6 +131,7 @@ nav ul {
     transform-origin: center;
     transform: scaleX(0);
     transition: transform 0.3s ease-in-out;
+    list-style-type: none;
   }
   
 
@@ -159,26 +151,36 @@ nav ul a {
   font-size: 1.3rem;
   display: inline-block;
   padding: 15px 26px 10px;
+  list-style-type: none;
 }
 
 .courses {
     background-color: #B2FFED;
+    padding-top: 127px;
+    padding-bottom: 75px;
 }
 
 .skills {
     background-color: #DCFFCB;
+    padding-top: 95px;
+    padding-bottom: 75px;
 }
 
 .projects {
     background-color: #E4E0FF;
+    padding-top: 95px;
 }
 
 .about {
     background-color: #C7DAFF;
+    padding-top: 95px;
+    padding-bottom: 75px;
 }
 
 .contact {
-    background-color: #fce5d9
+    background-color: #fce5d9;
+    padding-top: 95px;
+    padding-bottom: 75px;
 }
 
 header {
@@ -226,6 +228,7 @@ h1 {
 
 /* FORM STYLING */
 .form-row {
+    margin-top: 50px;
     margin-right: 500px;
 }
 
@@ -287,6 +290,7 @@ footer p {
         display: grid;
         grid-template-columns: auto auto;
         padding: 10px;
+        padding-top: 50px;
     }
     .grid-item {
         padding: 20px;
@@ -302,8 +306,10 @@ footer p {
 @media (min-width: 500px) {
     .grid-container {
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
         padding: 10px;
+        padding-top: 50px;
+        margin-right: 80px;
     }
     .grid-item {
         padding: 20px;
@@ -322,6 +328,7 @@ footer p {
         display: grid;
         grid-template-columns: auto auto auto auto auto;
         padding: 10px;
+        padding-top: 50px;
     }
     .grid-item {
         padding: 20px;
@@ -340,9 +347,15 @@ footer p {
     .project-container {
         display: flex;
         flex-direction: column;
+        padding-bottom: 60px;
     }
     .project-image {
         flex: 100%;
+    }
+
+    #secondprojimg {
+        margin-top: -80px;
+        padding-top: -20px;
     }
     
     .project-desc {
@@ -359,6 +372,11 @@ footer p {
         flex: 50%;
         float: left;
     }
+
+    #secondprojimg {
+        margin-top: -80px;
+        padding-top: -20px;
+    }
     
     .project-desc1 {
         flex: 50%;
@@ -369,7 +387,6 @@ footer p {
     .project-desc2 {
         flex: 50%;
         float: right;
-        padding-top: 80px;
     }
 }
 
@@ -406,6 +423,11 @@ footer p {
         flex: 50%;
     }
 }
+
+.coursework-row {
+    padding-top: 50px;
+}
+
 
 /* ABOUT SECTION */
 @media (min-width: 800px) {
